@@ -64,7 +64,7 @@ void Queue<Type>::reset()
 }
 
 template<class Type>
-Type Queue<Type>::front()
+Type Queue<Type>::frontElem()
 {
 	if (!isEmpty())
 		return elements[front];
@@ -73,10 +73,11 @@ Type Queue<Type>::front()
 }
 
 template<class Type>
-Type Queue<Type>::back()
+Type Queue<Type>::backElem()
 {
 	if (!isEmpty())
-		return elements[back];
+		return elements[rear];
 	else return NULL; 
 }
 
+template class Queue <int>;// fix for link problem 

@@ -15,8 +15,8 @@ public:
 	bool enqueue(Type element);
 	bool dequeue();
 	void reset(); 
-	Type front();
-	Type back();
+	Type frontElem();
+	Type backElem();
 
 
 

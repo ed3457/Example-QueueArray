@@ -2,10 +2,24 @@
 //
 
 #include <iostream>
+#include "Queue.h"
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Queue <int> q;
+
+	q.enqueue(5);
+
+	while (!q.isEmpty())
+	{
+
+		q.dequeue();
+	}
+
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
