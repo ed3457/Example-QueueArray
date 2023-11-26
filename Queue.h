@@ -13,7 +13,7 @@ public:
 	bool isEmpty();
 	bool isFull();
 	bool enqueue(Type element);
-	bool dequeue();
+	Type dequeue();
 	void reset(); 
 	Type frontElem();
 	Type backElem();

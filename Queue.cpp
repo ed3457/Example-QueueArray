@@ -44,15 +44,15 @@ else
 }
 
 template<class Type>
-bool Queue<Type>::dequeue()
+Type Queue<Type>::dequeue()
 {    if (isEmpty())
-	return false;
+	return NULL;
 else
 {
-	cout << elements[front]<<endl;
+	Type elem = elements[front];
 	front += 1; 
 	count -= 1;
-	return true;
+	return elem;
 
 }
 }
