@@ -10,14 +10,16 @@ int main()
 	Queue <int> q;
 
 	q.enqueue(5);
+	q.enqueue(7);
+	q.enqueue(9);
 
 	while (!q.isEmpty())
 	{
 
-		q.dequeue();
+		cout<<q.dequeue()<<endl;
 	}
 
-
+	// Your code goes after here
 
 
 }
